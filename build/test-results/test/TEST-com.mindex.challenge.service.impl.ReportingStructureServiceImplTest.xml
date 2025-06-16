@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mindex.challenge.service.impl.ReportingStructureServiceImplTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-06-16T12:32:13" hostname="agilemac78s-MacBook-Pro.local" time="0.757">
+  <properties/>
+  <testcase name="testReportingStructureCalculation" classname="com.mindex.challenge.service.impl.ReportingStructureServiceImplTest" time="0.757"/>
+  <system-out><![CDATA[18:02:11.387 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.mindex.challenge.service.impl.ReportingStructureServiceImplTest]: ReportingStructureServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:02:11.494 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.mindex.challenge.ChallengeApplication for test class com.mindex.challenge.service.impl.ReportingStructureServiceImplTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2025-06-16T18:02:11.824+05:30  INFO 40530 --- [    Test worker] .c.s.i.ReportingStructureServiceImplTest : Starting ReportingStructureServiceImplTest using Java 21.0.6 with PID 40530 (started by agilemac78 in /Users/agilemac78/Downloads/mindex-code-challenge)
+2025-06-16T18:02:11.825+05:30 DEBUG 40530 --- [    Test worker] .c.s.i.ReportingStructureServiceImplTest : Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-16T18:02:11.825+05:30  INFO 40530 --- [    Test worker] .c.s.i.ReportingStructureServiceImplTest : No active profile set, falling back to 1 default profile: "default"
+2025-06-16T18:02:12.119+05:30  INFO 40530 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-06-16T18:02:12.155+05:30  INFO 40530 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 2 MongoDB repository interfaces.
+2025-06-16T18:02:12.695+05:30  INFO 40530 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2025-06-16T18:02:12.708+05:30  INFO 40530 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-16T18:02:12.709+05:30  INFO 40530 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-16T18:02:12.760+05:30  INFO 40530 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-16T18:02:12.761+05:30  INFO 40530 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 918 ms
+2025-06-16T18:02:12.964+05:30  INFO 40530 --- [    Test worker] de.bwaldvogel.mongo.MongoServer          : started MongoServer(port: 60874, ssl: false)
+2025-06-16T18:02:13.075+05:30  INFO 40530 --- [    Test worker] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "4.11.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "15.5"}, "platform": "Java/Oracle Corporation/21.0.6+8-LTS-188"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@3fa78b9a, com.mongodb.Jep395RecordCodecProvider@eb07454, com.mongodb.KotlinCodecProvider@67e82a25]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2025-06-16T18:02:13.094+05:30  INFO 40530 --- [localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=19543041}
+2025-06-16T18:02:13.749+05:30  INFO 40530 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 60878 (http) with context path ''
+2025-06-16T18:02:13.755+05:30  INFO 40530 --- [    Test worker] .c.s.i.ReportingStructureServiceImplTest : Started ReportingStructureServiceImplTest in 2.139 seconds (process running for 3.007)
+2025-06-16T18:02:14.411+05:30  INFO 40530 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-16T18:02:14.411+05:30  INFO 40530 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-16T18:02:14.412+05:30  INFO 40530 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-16T18:02:14.439+05:30 DEBUG 40530 --- [o-auto-1-exec-1] c.m.c.controller.EmployeeController      : Received employee create request for [com.mindex.challenge.data.Employee@6395f786]
+2025-06-16T18:02:14.439+05:30 DEBUG 40530 --- [o-auto-1-exec-1] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee [com.mindex.challenge.data.Employee@6395f786]
+2025-06-16T18:02:14.456+05:30 DEBUG 40530 --- [o-auto-1-exec-2] c.m.c.controller.EmployeeController      : Received employee create request for [com.mindex.challenge.data.Employee@65567856]
+2025-06-16T18:02:14.457+05:30 DEBUG 40530 --- [o-auto-1-exec-2] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee [com.mindex.challenge.data.Employee@65567856]
+2025-06-16T18:02:14.468+05:30 DEBUG 40530 --- [o-auto-1-exec-3] c.m.c.controller.EmployeeController      : Received employee create request for [com.mindex.challenge.data.Employee@50ed3ad]
+2025-06-16T18:02:14.468+05:30 DEBUG 40530 --- [o-auto-1-exec-3] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee [com.mindex.challenge.data.Employee@50ed3ad]
+Employee ID in list: 16a596ae-edd3-4847-99fe-c4518e82c86f
+Employee ID in list: b7839309-3348-463b-a7e3-5de1c168beb3
+Employee ID in list: 03aa1462-ffa9-4978-901b-7c001562cf6f
+Employee ID in list: 62c1084e-6e34-4630-93fd-9153afb65309
+Employee ID in list: c0c2293d-16bd-4603-8e08-638a9d18b22c
+Employee ID in list: e42f975b-9d9c-4e2b-821b-6f3730ffeeb8
+Employee ID in list: 825f8bcf-e44c-469c-bab4-ad8a0f6f0670
+Employee ID in list: 50b511f0-f417-4e04-bf1a-8caaa9daf06c
+Employee ID in list: 16a596ae-edd3-4847-99fe-c4518e82c86f
+Employee ID in list: b7839309-3348-463b-a7e3-5de1c168beb3
+Employee ID in list: 03aa1462-ffa9-4978-901b-7c001562cf6f
+Employee ID in list: 62c1084e-6e34-4630-93fd-9153afb65309
+Employee ID in list: c0c2293d-16bd-4603-8e08-638a9d18b22c
+Employee ID in list: e42f975b-9d9c-4e2b-821b-6f3730ffeeb8
+Employee ID in list: 825f8bcf-e44c-469c-bab4-ad8a0f6f0670
+Employee ID in list: 50b511f0-f417-4e04-bf1a-8caaa9daf06c
+Employee ID in list: 16a596ae-edd3-4847-99fe-c4518e82c86f
+Employee ID in list: b7839309-3348-463b-a7e3-5de1c168beb3
+Employee ID in list: 03aa1462-ffa9-4978-901b-7c001562cf6f
+Employee ID in list: 62c1084e-6e34-4630-93fd-9153afb65309
+Employee ID in list: c0c2293d-16bd-4603-8e08-638a9d18b22c
+Employee ID in list: e42f975b-9d9c-4e2b-821b-6f3730ffeeb8
+Employee ID in list: 825f8bcf-e44c-469c-bab4-ad8a0f6f0670
+Employee ID in list: 50b511f0-f417-4e04-bf1a-8caaa9daf06c
+]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/Users/agilemac78/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.12/be4984cb6fd1ef1d11f218a648889dfda44b8a15/byte-buddy-agent-1.14.12.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
