@@ -1,6 +1,5 @@
 package com.mindex.challenge.controller;
 
-
 import com.mindex.challenge.dao.EmployeeRepository;
 import com.mindex.challenge.data.Employee;
 import com.mindex.challenge.data.ReportingStructure;
@@ -10,7 +9,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import java.util.List;
 
 @RestController
@@ -22,7 +20,6 @@ public class ReportingStructureController {
 
     @Autowired
     private EmployeeRepository employeeRepository;
-
 
     // Endpoint to get ReportingStructure for a given employeeId
     @GetMapping("/{employeeId}")

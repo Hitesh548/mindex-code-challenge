@@ -1,4 +1,4 @@
-package com.mindex.challenge.exception_hendler;
+package com.mindex.challenge.exception_handler;
 
 import org.springframework.context.support.DefaultMessageSourceResolvable;
 import org.springframework.http.HttpStatus;
@@ -23,7 +23,6 @@ public class GlobalExceptionHandler {
 
         return new ResponseEntity<>(Map.of("errors", errors), HttpStatus.BAD_REQUEST);
     }
-
 
     @ExceptionHandler(GlobalNotFoundException.class)
     public ResponseEntity<Map<String, String>> handleNotFound(GlobalNotFoundException ex) {

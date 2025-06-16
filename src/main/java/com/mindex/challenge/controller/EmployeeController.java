@@ -47,7 +47,6 @@ public class EmployeeController {
         return employeeService.update(employee);
     }
 
-
     // Method to insert employees without duplicates
     public void insertEmployees(List<Employee> employeeList) {
         for (Employee employee : employeeList) {

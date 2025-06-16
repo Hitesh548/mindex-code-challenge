@@ -1,6 +1,5 @@
 package com.mindex.challenge.service.impl;
 
-
 import com.mindex.challenge.data.Employee;
 import com.mindex.challenge.data.ReportingStructure;
 import com.mindex.challenge.exception_hendler.GlobalNotFoundException;
@@ -74,5 +73,3 @@ public class ReportingStructureServiceImpl implements ReportingStructureService 
         return new ReportingStructure(employee, numberOfReports);
     }
 }
-
-

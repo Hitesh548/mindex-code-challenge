@@ -6,7 +6,6 @@ import lombok.Getter;
 import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
@@ -18,7 +17,6 @@ public class Compensation {
     @Id
     private String compensationId;
 
-
     @NotNull(message = "Salary is required")
     private Double salary;
 
@@ -27,7 +25,6 @@ public class Compensation {
 
     @NotBlank(message = "Employee ID is required")
     private String employeeId;
-
 
     // Getters and Setters
     public String getCompensationId() {

@@ -12,7 +12,6 @@ public class Employee {
     private String department;
     private List<Employee> directReports;
 
-
     public Employee(){
 
     }
