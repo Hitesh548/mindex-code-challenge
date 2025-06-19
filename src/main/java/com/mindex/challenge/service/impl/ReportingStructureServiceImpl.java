@@ -2,7 +2,7 @@ package com.mindex.challenge.service.impl;
 
 import com.mindex.challenge.data.Employee;
 import com.mindex.challenge.data.ReportingStructure;
-import com.mindex.challenge.exception_hendler.GlobalNotFoundException;
+import com.mindex.challenge.exception_handler.GlobalNotFoundException;
 import com.mindex.challenge.service.ReportingStructureService;
 import org.springframework.stereotype.Service;
 
